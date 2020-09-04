@@ -1,0 +1,16 @@
+server:
+  port: 8081
+  
+dubbo:
+  application:
+    name: Seata-QFDMY-Consumer
+  registry:
+      address: zookeeper://h1:2181
+      
+spring:
+  application:
+    name: Seata-QFDMY-Consumer
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: zzw_seata_group

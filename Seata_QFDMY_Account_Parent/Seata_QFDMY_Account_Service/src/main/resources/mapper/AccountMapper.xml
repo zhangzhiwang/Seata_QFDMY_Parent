@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.asiainfo.mapper.AccountMapper">
+	<insert id="insertAccount" parameterType="Account" useGeneratedKeys="true">
+		insert into t_account (user_id,account_last) values (#{userId},#{accountLast})
+	</insert>
+</mapper>

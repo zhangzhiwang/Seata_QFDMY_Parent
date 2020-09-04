@@ -5,8 +5,8 @@ import java.io.Serializable;
 import lombok.Data;
 
 @Data
-public class User implements Serializable {
+public class Account implements Serializable {
+	private int accountId;
 	private int userId;
-	private String userName;
-	private String userAddress;
+	private int accountLast;
 }

@@ -1,21 +1,22 @@
 server:
-  port: 8090
+  port: 8092
   
 dubbo:
   application:
-    name: Seata-QFDMY-User-Service
+    name: Seata-QFDMY-Account-Service
   registry:
     address: zookeeper://h1:2181
   protocol:
     name: dubbo
+    port: 20881
  
 spring:
   application:
-    name: Seata-QFDMY-User-Service
+    name: Seata-QFDMY-Account-Service
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    jdbc-url: jdbc:mysql://localhost:3306/seata
+    jdbc-url: jdbc:mysql://localhost:3307/seata
 #    url: jdbc:mysql://localhost:3306/seata
     username: root
     password: zzw1234
